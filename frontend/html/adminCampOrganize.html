@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blood Donor Connect</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="../js/adminCamp.js" defer></script>
+  <script src="../js/ui.js" defer></script>
+  <script src="../js/auth.js" defer></script>
+</head>
+<body>
+  <div id="message-box" class="message-box hidden"></div>
+  <nav class="navbar">
+    <h1>BloodConnect</h1>
+    <div class="page-links">
+      <a href="index.html">Home</a>
+      <a href="register.html">Register</a>
+      <a href="search.html">Search</a>
+      <a href="request.html">Request</a>
+      <a id="organizeCampLink" href="organize.html" class="active">Organize Camp</a>
+      <a href="login.html">Log in</a>
+      <div class="profile-dropdown" id="profileDropdown">
+        <a class="avatar" onclick="toggleProfileMenu()">Profile</a>
+          <div class="dropdown-content hidden" id="profileMenu"></div>
+      </div>
+    </div>
+  </nav>
+  <h1>Pending Requests</h1>
+
+    <table id="pending-camps">
+      <thead>
+        <tr><th>ID</th><th>Event</th><th>Date</th><th>City</th><th>Actions</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </main>
+</body>
+</html>
